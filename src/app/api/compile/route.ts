@@ -1,10 +1,10 @@
 // @ts-ignore
-import hackerEarth from 'hackerearth-node';
+import HackerEarth from "hackerearth-node";
 import { NextRequest, NextResponse } from 'next/server';
 
 export async function POST(req:NextRequest){
     const { code } = await req.json();
-    var hackerEarth:any=new hackerEarth("7c65a588bff92c18efd377e02a82d9779ca914b9");
+    var hackerEarth:any=new HackerEarth("7c65a588bff92c18efd377e02a82d9779ca914b9");
     var config:any={};
     config.time_limit=1;  //your time limit in integer
     config.memory_limit=323244;  //your memory limit in integer
