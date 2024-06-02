@@ -1,5 +1,6 @@
 import { NextRequest } from "next/server";
 
-export async function GET(request){
-    return new Response("Hello World");
+export async function POST(request){
+    const {data}=await request.json();
+    return new Response(data);
 }
