@@ -31,8 +31,6 @@ const EditorCustom = ({data,settestCases,setTestCasesError,setIsMaximized}:{data
  
       setLoading(true)
         const res:any=await axios.post("/api/compile",{code,test_code:data.test_code[selectedLanguage],language:selectedLanguage})
-
-        
         if(res.status===200 && res.data.success===false){
           setTestCasesError(res.data.data.error)
   
@@ -40,12 +38,8 @@ const EditorCustom = ({data,settestCases,setTestCasesError,setIsMaximized}:{data
           setLoading(false)
           return;
         }
-        
         settestCases(res.data.test_results)
-        
         setLoading(false)
-       
-        
     }
     const [loading,setLoading]=useState(false)
   return (
