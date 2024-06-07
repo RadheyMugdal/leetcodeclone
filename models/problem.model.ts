@@ -4,11 +4,11 @@ export interface Problem extends mongoose.Document {
   title: string;
   description: string;
   difficulty: "easy" | "medium" | "hard";
-  examples: {};
   tags: {};
   constraints: {};
   test_cases:{};
-  starter_code: string;
+  starter_code: {};
+  test_code:{}
 }
 
 export const ProblemSchema:Schema<Problem>=new Schema({
@@ -16,11 +16,11 @@ export const ProblemSchema:Schema<Problem>=new Schema({
     title: {type: String, required: true},
     description: {type: String, required: true},
     difficulty: {type: String, required: true},
-    examples: {type: Array, required: true},
     tags: {type: Array, required: true},
     constraints: {type: Array, required: true},
     test_cases: {type: Array, required: true},
-    starter_code: {type: String, required: true}
+    starter_code: {type: Object, required: true},
+    test_code: {type: Object, required: true}
 })
 
 export const ProblemModel =mongoose.models.Problem || mongoose.model<Problem>('Problem', ProblemSchema);
