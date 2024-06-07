@@ -113,7 +113,7 @@ const Page = () => {
 
   return (
     <div className="w-screen p-4">
-      <h1 className="text-3xl text-center mb-5">Radhey's DSA Sheet 🔥</h1>
+      <h1 className="text-3xl text-center mb-5">Radhey&#39;s DSA Sheet 🔥</h1>
       <div className="w-[45%] m-auto p-6">
         <div className="flex items-center py-4">
           <Input
