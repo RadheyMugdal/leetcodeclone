@@ -27,7 +27,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { ArrowUpDown } from 'lucide-react';
 
-const page = () => {
+const Page = () => {
   const [problems, setProblems] = useState<any[]>([]);
   const [sorting, setSorting] = useState<SortingState>([]);
   const [columnFilters, setColumnFilters] = useState<ColumnFiltersState>([]);
@@ -165,4 +165,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

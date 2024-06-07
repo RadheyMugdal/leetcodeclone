@@ -17,7 +17,7 @@ const page = () => {
         <Homepagebg/>
       
       <div className=' w-[50%] h-full flex flex-col items-center justify-center  p-7 '>
-      <h1 className=' text-6xl font-bold'>Let's <span className='text-orange-500'>
+      <h1 className=' text-6xl font-bold'>Let&#39;s <span className='text-orange-500'>
       
           {/* <Typewriter
             words={['Learn', 'Solve', 'Code', 'Prepare']}
